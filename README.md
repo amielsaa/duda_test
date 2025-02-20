@@ -12,3 +12,7 @@ Make sure you are in the main directory where **`docker-compose.yml`** is locate
 ```
 docker-compose up --build
 ```
+You can access the web app on:
+```
+http://localhost:5173
+```
