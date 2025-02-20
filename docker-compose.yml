@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  vite-app:
+    build: ./duda_test
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./duda_test:/app 
+      - /app/node_modules  
+
