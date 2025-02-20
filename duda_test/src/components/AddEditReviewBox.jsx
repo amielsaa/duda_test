@@ -10,7 +10,7 @@ function AddEditReviewBox({ mode }) {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (mode === "edit") {
-          editReview(editingId, comment);
+          editReview(editingId, username, comment);
         } else {
           addReview(username, comment);
         }

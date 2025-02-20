@@ -44,11 +44,11 @@ export const ReviewProvider = ({ children }) => {
         setReviews([...reviews, newReview]);
     };
 
-    const editReview = (id, updatedComment) => {
-        if (!updatedComment.trim()) 
+    const editReview = (id, username, updatedComment) => {
+        if (!username.trim() || !updatedComment.trim()) 
             return alert("Both fields are required.");
         setReviews(reviews.map( review => 
-            review.id === id ? { ...review, comment: updatedComment } : review
+            review.id === id ? { ...review, username: username, comment: updatedComment } : review
         ));
         setEditingId(null);
     };

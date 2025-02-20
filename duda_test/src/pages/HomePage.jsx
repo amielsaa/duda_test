@@ -6,6 +6,7 @@ function HomePage() {
 
     return (
         <div className="homepage-container">
+            <h1>Reviews</h1>
             <ReviewList />
             <AddReviewBox />
         </div>
