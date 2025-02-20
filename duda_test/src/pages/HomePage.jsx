@@ -1,8 +1,13 @@
+import ReviewList from "../components/ReviewList"
+import AddReviewBox from "../components/AddEditReviewBox"
+import "../css/HomePage.css"
+
 function HomePage() {
+
     return (
-        <div>
-            <h1>Home Page</h1>
-            <p>This is the home page</p>
+        <div className="homepage-container">
+            <ReviewList />
+            <AddReviewBox />
         </div>
     )
   }
